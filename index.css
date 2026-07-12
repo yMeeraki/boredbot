@@ -61,7 +61,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  gap: .5em;
   align-items: center;
   border-radius: 1.5em;
   padding: 3em;
@@ -148,7 +148,7 @@ h4 {
     transform: scale(100%);
   }
   50% {
-    transform: scale(98%);
+    transform: scale(104%);
   }
 }
 
@@ -163,7 +163,7 @@ h4 {
 }
 
 .activity {
-  background: rgba(255, 77, 79, 0.05);
+  background: #fff;
   padding: 1em;
   border-radius: 18px;
   border: 0.1em solid rgba(255, 77, 79, 0.2);
