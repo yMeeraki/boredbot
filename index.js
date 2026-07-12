@@ -11,9 +11,9 @@ function getNewActivity() {
 }
 
 function displayActivity(data) {
-  document.getElementById("title").textContent = "HappyBot"
+  document.getElementById("title").textContent = "HappyBot";
   document.getElementById("activity").textContent = data.activity;
   document.getElementById("activity").classList.add("activity");
-  document.getElementById("body").classList.add("bg-activity")
-  document.getElementById("label").textContent = "Need another one?"
+  document.getElementById("body").classList.add("bg-activity");
+  document.getElementById("label").textContent = "Need another one?";
 }
