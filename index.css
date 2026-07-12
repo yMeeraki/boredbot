@@ -37,7 +37,6 @@ main {
 }
 
 .icon {
-  background-color: #eef5ff;
   font-size: 3em;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(1em);
@@ -90,6 +89,17 @@ button:active{
     transform:scale(.96);
 }
 
+h4{
+  font-weight: 500;
+  color: #64748b;
+  font-size: 1em;
+  border: 1px solid #ff4d4f;
+  padding: 1em;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1em);
+}
+
 @keyframes robot-bounce {
   0%,
   100% {
@@ -105,6 +115,6 @@ button:active{
     transform: scale(100%);
   }
   50%{
-    transform: scale(95%);
+    transform: scale(98%);
   }
 }
