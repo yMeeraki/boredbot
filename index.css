@@ -20,10 +20,42 @@ body {
     #d8e8ff
   );
   font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+body::before {
+  top: -10em;
+  left: -10em;
+  content: "";
+  position: absolute;
+  width: 40em;
+  height: 40em;
+  background-color: #ffff;
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: blur(1em);
+  animation: bg-pulse 2s ease-in-out infinite;
+}
+
+body::after {
+  bottom: -10em;
+  right: -10em;
+  content: "";
+  position: absolute;
+  width: 40em;
+  height: 40em;
+  background-color: #ffff;
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: blur(1em);
+  animation: bg-pulse 2s ease-in-out infinite;
 }
 
 main {
   background-color: rgba(100, 116, 139, 0.05);
+  backdrop-filter: blur(0.2em);
+  position: relative;
+  z-index: 1;
   width: 37.5em;
   display: flex;
   flex-direction: column;
@@ -59,7 +91,7 @@ h3 {
   color: #64748b;
 }
 
-.button-container{
+.button-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,16 +112,15 @@ button {
   animation: button-pulse 2s ease-in-out infinite;
 }
 
-button:hover{
-    box-shadow:
-    0 20px 50px rgba(255,77,79,.55);
+button:hover {
+  box-shadow: 0 20px 50px rgba(255, 77, 79, 0.55);
 }
 
-button:active{
-    transform:scale(.96);
+button:active {
+  transform: scale(0.96);
 }
 
-h4{
+h4 {
   font-weight: 500;
   color: #64748b;
   font-size: 1em;
@@ -111,20 +142,31 @@ h4{
 }
 
 @keyframes button-pulse {
-  0%,100%{
+  0%,
+  100% {
     transform: scale(100%);
   }
-  50%{
+  50% {
     transform: scale(98%);
   }
 }
 
-.activity{
-    background:#F8FAFC;
-    padding:1em;
-    border-radius:18px;
-    font-size:1.1rem;
-    color:#ff4d4f;
-    line-height:1.6;
-    box-shadow:0 .5em rgba(0,0,0,.05);
+@keyframes bg-pulse {
+  0%,
+  100% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(95%);
+  }
+}
+
+.activity {
+  background: #f8fafc;
+  padding: 1em;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  color: #ff4d4f;
+  line-height: 1.6;
+  box-shadow: 0 0.5em rgba(0, 0, 0, 0.05);
 }
