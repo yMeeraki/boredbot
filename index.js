@@ -12,4 +12,5 @@ function getNewActivity() {
 
 function displayActivity(data) {
   document.getElementById("activity").textContent = data.activity;
+  document.getElementById("activity").classList.add("activity");
 }

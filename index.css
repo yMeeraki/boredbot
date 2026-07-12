@@ -118,3 +118,13 @@ h4{
     transform: scale(98%);
   }
 }
+
+.activity{
+    background:#F8FAFC;
+    padding:1em;
+    border-radius:18px;
+    font-size:1.1rem;
+    color:#ff4d4f;
+    line-height:1.6;
+    box-shadow:0 .5em rgba(0,0,0,.05);
+}
