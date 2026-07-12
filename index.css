@@ -1,45 +1,50 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: linear-gradient(to left bottom, #eef5ff, #e9f2ff, #e3efff, #deebff, #d8e8ff);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to left bottom,
+    #eef5ff,
+    #e9f2ff,
+    #e3efff,
+    #deebff,
+    #d8e8ff
+  );
 }
 
-main{
-    background-color: rgba(100, 116, 139,.50);
-    max-width: 37.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.5em;
-    padding: 3em;
-    box-shadow: 0em .5em 0.5em 0em rgba(0, 0, 0, 0.15);
+main {
+  background-color: rgba(100, 116, 139, 0.5);
+  max-width: 37.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+  padding: 3em;
+  box-shadow: 0em 0.5em 0.5em 0em rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255);
-
 }
 
-.icon{
-    background-color: #eef5ff;
-    font-size:3em;
-      /* Semi-transparent background color */
-  background: rgba(255, 255, 255, 0.15); 
-  
-  /* The core glass blur effect */
-  backdrop-filter: blur(12px);
+.icon {
+  background-color: #eef5ff;
+  font-size: 3em;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1em);
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255);
-  padding: .2em;
-  animation: robot-bounce 2s ease-in-out infinite
+  box-shadow: 0em 0.09em 0.9em 0em rgba(0, 0, 0, 0.15);
+  padding: 0.2em;
+  animation: robot-bounce 2s ease-in-out infinite;
 }
 
-@keyframes robot-bounce{
-    0%, 100% {
+@keyframes robot-bounce {
+  0%,
+  100% {
     transform: translateY(0); /* Start and end at normal position */
   }
   50% {
-    transform: translateY(-.1em); 
+    transform: translateY(-0.1em);
   }
 }
