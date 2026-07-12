@@ -52,7 +52,7 @@ body::after {
 }
 
 main {
-  background-color: rgba(100, 116, 139, 0.05);
+  background-color:rgba(255,255,255,.45);
   backdrop-filter: blur(0.2em);
   position: relative;
   z-index: 1;
