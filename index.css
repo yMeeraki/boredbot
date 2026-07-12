@@ -28,6 +28,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2em;
   align-items: center;
   border-radius: 1.5em;
   padding: 3em;
@@ -45,7 +46,6 @@ main {
   box-shadow: 0em 0.09em 0.9em 0em rgba(0, 0, 0, 0.15);
   padding: 0.2em;
   animation: robot-bounce 2s ease-in-out infinite;
-  margin-bottom: 0.75em;
 }
 
 @keyframes robot-bounce {
@@ -68,4 +68,27 @@ h3 {
   font-weight: 500;
   font-size: 1.75em;
   color: #64748b;
+}
+
+button {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background: #ff4d4f;
+  border: 1px solid white;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(255, 77, 79, 0.45);
+  transition: 0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:
+    0 20px 50px rgba(255,77,79,.55);
+}
+
+button:active{
+    transform:scale(.96);
 }
