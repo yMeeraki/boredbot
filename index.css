@@ -1,3 +1,10 @@
+@import url("https://googleapis.com");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,10 +19,11 @@ body {
     #deebff,
     #d8e8ff
   );
+  font-family: "Poppins", sans-serif;
 }
 
 main {
-  background-color: rgba(100, 116, 139, 0.5);
+  background-color: rgba(100, 116, 139, 0.05);
   max-width: 37.5em;
   display: flex;
   flex-direction: column;
@@ -37,6 +45,7 @@ main {
   box-shadow: 0em 0.09em 0.9em 0em rgba(0, 0, 0, 0.15);
   padding: 0.2em;
   animation: robot-bounce 2s ease-in-out infinite;
+  margin-bottom: 0.75em;
 }
 
 @keyframes robot-bounce {
@@ -47,4 +56,16 @@ main {
   50% {
     transform: translateY(-0.1em);
   }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #1e293b;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.75em;
+  color: #64748b;
 }
