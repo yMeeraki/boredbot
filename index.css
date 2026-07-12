@@ -33,7 +33,7 @@ body::before {
   background-color: #ffff;
   border-radius: 50%;
   opacity: 0.35;
-  filter: blur(1em);
+  filter: blur(6em);
   animation: bg-pulse 2s ease-in-out infinite;
 }
 
@@ -47,7 +47,7 @@ body::after {
   background-color: #ffff;
   border-radius: 50%;
   opacity: 0.35;
-  filter: blur(1em);
+  filter: blur(6em);
   animation: bg-pulse 2s ease-in-out infinite;
 }
 
