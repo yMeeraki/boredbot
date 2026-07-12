@@ -48,16 +48,6 @@ main {
   animation: robot-bounce 2s ease-in-out infinite;
 }
 
-@keyframes robot-bounce {
-  0%,
-  100% {
-    transform: translateY(0); /* Start and end at normal position */
-  }
-  50% {
-    transform: translateY(-0.1em);
-  }
-}
-
 h1 {
   font-weight: 700;
   font-size: 3.5em;
@@ -88,15 +78,33 @@ button {
   font-size: 3rem;
   cursor: pointer;
   box-shadow: 0 15px 40px rgba(255, 77, 79, 0.45);
-  transition: 0.3s;
+  animation: button-pulse 2s ease-in-out infinite;
 }
 
 button:hover{
-    transform:scale(1.08);
     box-shadow:
     0 20px 50px rgba(255,77,79,.55);
 }
 
 button:active{
     transform:scale(.96);
+}
+
+@keyframes robot-bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at normal position */
+  }
+  50% {
+    transform: translateY(-0.1em);
+  }
+}
+
+@keyframes button-pulse {
+  0%,100%{
+    transform: scale(100%);
+  }
+  50%{
+    transform: scale(95%);
+  }
 }
