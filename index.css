@@ -163,9 +163,10 @@ h4 {
 }
 
 .activity {
-  background: #f8fafc;
+  background: rgba(255, 77, 79, .1);
   padding: 1em;
   border-radius: 18px;
+  border: .1em solid rgba(255, 77, 79, .2);
   font-size: 1.1rem;
   color: #ff4d4f;
   line-height: 1.6;
